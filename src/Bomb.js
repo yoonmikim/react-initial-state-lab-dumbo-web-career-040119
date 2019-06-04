@@ -6,8 +6,7 @@ export default class Cell extends Component {
 
   constructor(props) {
     super(props)
-    // ...define initial state with a key of 'color' set to the 'value' prop
-    this.state = { secondsLeft: this.props.value }
+    this.state = { secondsLeft: this.props.initialCount }
   }
 
   handleClick = () => {
