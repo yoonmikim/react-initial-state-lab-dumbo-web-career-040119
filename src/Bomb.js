@@ -9,14 +9,8 @@ export default class Cell extends Component {
     this.state = { secondsLeft: this.props.initialCount }
   }
 
-  handleClick = () => {
-    this.setState({
-      color: '#333'
-    })
-  }
-
   render(){
-    return <div className="cell" style={{backgroundColor: this.state.color}}  onClick={this.handleClick} > </div>
+    return <div className="cell" style={{backgroundColor: this.state.color}}  onClick={this.handleClick} >{SECONDS_LEFT} seconds left before I go boom! </div>
   }
 
 }
