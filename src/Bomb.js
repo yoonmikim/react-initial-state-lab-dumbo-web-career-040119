@@ -10,7 +10,7 @@ export default class Cell extends React.Component {
   }
 
   render(){
-    return <div className="cell" style={{backgroundColor: this.state.color}}  onClick={this.handleClick} >{this.state.secondsLeft} seconds left before I go boom! </div>
+    return <div>{this.state.secondsLeft} seconds left before I go boom! </div>
   }
 
 }
