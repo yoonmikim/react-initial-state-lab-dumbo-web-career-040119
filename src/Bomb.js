@@ -9,8 +9,16 @@ export default class Cell extends React.Component {
     this.state = { secondsLeft: this.props.initialCount }
   }
 
-  render(){
-    return <div>{this.state.secondsLeft} seconds left before I go boom! </div>
+  render() {
+    const message = this.state.secondsLeft === 0 ? 'Boom!' : `${this.state.secondsLeft} seconds left before I go boom!`;
+
+    return (
+      <div>{message}</div>
+    )
   }
+}
+
+
+  
 
 }
