@@ -1,8 +1,8 @@
 // your Bomb code here!
 
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Cell extends Component {
+export default class Cell extends React.Component {
 
   constructor(props) {
     super(props)
